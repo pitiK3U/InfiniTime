@@ -397,6 +397,7 @@ list(APPEND SOURCE_FILES
         displayapp/screens/Alarm.cpp
         displayapp/screens/Styles.cpp
         displayapp/screens/WeatherSymbols.cpp
+        displayapp/screens/SportsTracking.cpp
         displayapp/Colors.cpp
         displayapp/widgets/Counter.cpp
         displayapp/widgets/PageIndicator.cpp
@@ -462,6 +463,7 @@ list(APPEND SOURCE_FILES
         components/ble/ServiceDiscovery.cpp
         components/ble/HeartRateService.cpp
         components/ble/MotionService.cpp
+        components/ble/SportsTrackingService.cpp
         components/firmwarevalidator/FirmwareValidator.cpp
         components/motor/MotorController.cpp
         components/settings/Settings.cpp
@@ -611,6 +613,7 @@ set(INCLUDE_FILES
         displayapp/screens/Timer.h
         displayapp/screens/Dice.h
         displayapp/screens/Alarm.h
+        displayapp/screens/SportsTracking.h
         displayapp/Colors.h
         displayapp/widgets/Counter.h
         displayapp/widgets/PageIndicator.h
@@ -650,6 +653,7 @@ set(INCLUDE_FILES
         components/ble/HeartRateService.h
         components/ble/MotionService.h
         components/ble/SimpleWeatherService.h
+        components/ble/SportsTrackingService.h
         components/settings/Settings.h
         components/timer/Timer.h
         components/alarm/AlarmController.h

@@ -30,6 +30,7 @@
 #include "displayapp/screens/Weather.h"
 #include "displayapp/screens/PassKey.h"
 #include "displayapp/screens/Error.h"
+#include "displayapp/screens/SportsTracking.h"
 
 #include "drivers/Cst816s.h"
 #include "drivers/St7789.h"
@@ -539,6 +540,9 @@ void DisplayApp::LoadScreen(Apps app, DisplayApp::FullRefreshDirections directio
       break;
     case Apps::FlashLight:
       currentScreen = std::make_unique<Screens::FlashLight>(*systemTask, brightnessController);
+      break;
+    case Apps::SportsTracking:
+      currentScreen = std::make_unique<Screens::SportsTracking>(heartRateController);
       break;
     default: {
       const auto* d = std::find_if(userApps.begin(), userApps.end(), [app](const AppDescription& appDescription) {
